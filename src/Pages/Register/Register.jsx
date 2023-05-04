@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 import { getAuth, updateProfile } from "firebase/auth";
 // import 'bootstrap/dist/css/bootstrap.min.css';
-const auth = getAuth();
+// const auth = getAuth();
 const Register = () => {
   const {user, createUser, loading } = useContext(AuthContext);
   const [errorMessage, setErrorMessage] = useState("");
