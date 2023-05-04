@@ -4,7 +4,7 @@ import ChefCard from './ChefCard';
 import { AuthContext } from '../../../Providers/AuthProvider';
 
 const Chef = () => {
-    // const [chef, setChef] = useState([]);
+    const [chef, setChef] = useState([]);
     const {user, createUser, loading } = useContext(AuthContext);
     // if(loading){
     //     return <Spinner animation="grow" />
