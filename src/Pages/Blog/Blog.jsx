@@ -6,26 +6,26 @@ import { rgb } from 'pdf-lib';
 const redColor = rgb(1, 0, 0);
 
 
-const Blog = () => {
-    const createPdf = async () => {
-        const pdfDoc = await PDFDocument.create();
-        const page = pdfDoc.addPage([500, 500]);
-        const helveticaFont = await pdfDoc.embedFont(StandardFonts.Helvetica);
-        const textSize = 20;
-        const text = 'Blog I.Tell us the differences between uncontrolled and controlled components ?';
+// const Blog = () => {
+//     const createPdf = async () => {
+//         const pdfDoc = await PDFDocument.create();
+//         const page = pdfDoc.addPage([500, 500]);
+//         const helveticaFont = await pdfDoc.embedFont(StandardFonts.Helvetica);
+//         const textSize = 20;
+//         const text = 'Blog I.Tell us the differences between uncontrolled and controlled components ?';
     
-        page.drawText(text, {
-          x: 50,
-          y: 450,
-          size: textSize,
-          font: helveticaFont,
-          color: redColor,
-        });
+//         page.drawText(text, {
+//           x: 50,
+//           y: 450,
+//           size: textSize,
+//           font: helveticaFont,
+//           color: redColor,
+//         });
     
-        const pdfBytes = await pdfDoc.save();
-        const pdfUrl = URL.createObjectURL(new Blob([pdfBytes], { type: 'application/pdf' }));
-        window.open(pdfUrl);
-      };
+//         const pdfBytes = await pdfDoc.save();
+//         const pdfUrl = URL.createObjectURL(new Blob([pdfBytes], { type: 'application/pdf' }));
+//         window.open(pdfUrl);
+//       };
   
     return (
         <Container className='bg-light p-4'>
