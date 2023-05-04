@@ -8,7 +8,7 @@ import ChefDetail from './ChefDetail';
 
 
 const ChefDetails = () => {
-    // const chefs = useLoaderData();
+    const chefs = useLoaderData();
     
     const { id, chefPicture, chefName, yearOfExperience, numberOfRecipes, likes, desc ,recipe} = chefs;
     let i = 0;
